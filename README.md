@@ -1,5 +1,5 @@
 # Ethiopian-News
-web scraping
+
 Contributers: Section 01
 Group-Members
 Amir Mustefa ATR/6831/09
