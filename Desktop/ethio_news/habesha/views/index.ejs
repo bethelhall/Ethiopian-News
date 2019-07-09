@@ -10,7 +10,7 @@
 
     <!-- Title -->
     <title>ዜና</title>
-
+  
     <!-- Favicon -->
     <link rel="icon" href="./img/core-img/favicon.ico">
 
@@ -201,15 +201,17 @@
                     <div class="breaking-news-area d-flex align-items-center">
                         <div class="news-title">
                             <p>
-                                ሰበር ዜና</p>
+                                ትኩስ ዜናዎች</p>
                         </div>
                         <div id="breakingNewsTicker" class="ticker">
                             <ul>
-                                <li><a href="#">‹‹በኢትዮጵያ አንድነት የሚመጣ ካለ ግንባራችንን እንሰጣለን›› ጠቅላይ ሚኒስትር ዓብይ አህመድ (ዶ/ር)</a>
-                                </li>
-                                <li><a href="#">የሰብዓዊ መብት ተሟጋቹ ዳንኤል በቀለ (ዶ/ር) የኢትዮጵያ ሰብዓዊ መብት ኮሚሽነር ሆነው ተሾሙ.</a></li>
-                                <li><a href="#">አብን ጠቅላይ ሚኒስትሩ ጭምር የፈረሙበት የፖለቲካ ፓርቲዎች የቃል ኪዳን ሰነድ እየተጣሰ ነው አለ</a></li>
-                            </ul>
+                                
+                                    <% data.forEach(function(dat) { %>
+                                        <li><a href="/read<%=dat.link%>"><%= dat.text %></a></li>
+                                       
+                                    <% }); %>  
+                                   
+                                </ul>
                         </div>
                     </div>
 
